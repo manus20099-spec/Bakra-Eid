@@ -10,3 +10,20 @@ li{
     margin: 2px;
     padding-inline-end: 2px;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background: #0a7d4c;
+  color: white;
+}
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
