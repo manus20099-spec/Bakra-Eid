@@ -10,8 +10,110 @@ li{
     margin: 2px;
     padding-inline-end: 2px;
 }
-about.html
-body {
+.br
+.About  {
     background-color: blue;
     text-align: center;
 }
+.new-box{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+}
+.boxes{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border: 2px solid black;
+}
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f0fff4, #e8f5e9);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #4CAF50, #2E7D32);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Gallery Items */
+.gallery-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Image Styling */
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(90deg, #2E7D32, #4CAF50);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery {
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
+
